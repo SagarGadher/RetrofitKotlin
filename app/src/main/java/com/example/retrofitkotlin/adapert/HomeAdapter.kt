@@ -28,8 +28,8 @@ class HomeAdapter: ListAdapter<MarsProperty,HomeAdapter.MarsViewHolder>(DiffCall
 
     }
 
-    override fun onCreateViewHolder(p0: ViewGroup, p1: Int): HomeAdapter.MarsViewHolder {
-        return MarsViewHolder(ListHomeItemBinding.inflate(LayoutInflater.from(p0.context)))
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HomeAdapter.MarsViewHolder {
+        return MarsViewHolder(ListHomeItemBinding.inflate(LayoutInflater.from(parent.context)))
     }
 
     override fun onBindViewHolder(p0: HomeAdapter.MarsViewHolder, p1: Int) {
